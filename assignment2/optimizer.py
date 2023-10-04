@@ -45,8 +45,8 @@ class AdamW(Optimizer):
                 state = self.state[p]
                 if (len(state) == 0):
                     state['step'] = 0
-                    state['moment_1'] = torch.zeros(p.data.size())
-                    state['moment_2'] = torch.zeros(p.data.size())
+                    state['moment_1'] = torch.zeros_like(p.data)
+                    state['moment_2'] = torch.zeros_like(p.data)
                 moment_1 = state['moment_1']
                 moment_2 = state['moment_2']
 

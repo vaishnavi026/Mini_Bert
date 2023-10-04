@@ -38,10 +38,10 @@ python classifier.py \
 
 # Step 3. Prepare submission:
 ##  3.1. Copy your code to the $CAMPUSID folder
-for file in *.py; do cp $file ${CAMPUSID}/ done
-for file in *.sh; do cp $file ${CAMPUSID}/ done
-for file in *.md; do cp $file ${CAMPUSID}/ done
-for file in *.txt; do cp $file ${CAMPUSID}/ done
+for file in *.py; do cp $file ${CAMPUSID}/; done
+for file in *.sh; do cp $file ${CAMPUSID}/; done
+for file in *.md; do cp $file ${CAMPUSID}/; done
+for file in *.txt; do cp $file ${CAMPUSID}/; done
 
 ##  3.2. Compress the $CAMPUSID folder to $CAMPUSID.zip (containing only .py/.txt/.pdf/.sh files)
 python prepare_submit.py ${CAMPUSID} ${CAMPUSID}
